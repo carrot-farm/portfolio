@@ -1,0 +1,46 @@
+@import 'styles/utils.scss';
+
+.about-main-root{
+    @extend .section-main;
+    overflow: hidden;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    .filter{
+        @extend .section-main;
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        background: #000000;
+        opacity: 0.6;
+        margin-top: 0;
+        z-index: 1;
+    }
+    .title-container{
+        z-index: 2;
+        position: relative;
+        overflow: hidden;
+        margin-top: 120px;
+        color: #ffffff;
+        font-size: 5rem;
+        line-height: 1.5em;
+        @include media-s(){
+            font-size: 2.8rem;
+            margin-top: 150px;
+        }
+    }
+    .bottom-arrow-container{
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        z-index: 1;
+        color: #ffffff;
+        text-align: center;
+        .bottom-arrow{
+            font-size: 3rem;
+            margin-left: -1.5rem;
+        }
+    }   
+}

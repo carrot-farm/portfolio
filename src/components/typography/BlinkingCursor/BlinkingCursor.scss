@@ -1,0 +1,8 @@
+@import 'styles/utils.scss';
+
+.blinking-cursor-container{
+    .cursor{
+        letter-spacing: 0.1em;
+        content: '';
+    }
+}

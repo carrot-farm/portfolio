@@ -1,0 +1,99 @@
+@import 'styles/utils.scss';
+
+.section_contact-contents-root{
+    width: 100%;
+    color: #ffffff;
+    background: #111111;
+    position: relative;
+    .start-section{
+        @extend .section-l;
+    }
+    .article-section{
+        @extend .section-l;
+        @include media-s(){
+            .section-name{
+                .h3-deco{height: 1.7rem;}
+                h3{
+                    font-size: 1.7rem;
+                }
+            }
+        }
+        .container{
+            position: relative;
+            text-align: center;
+            .wrapper{
+                text-align: center;
+                &.center-align{
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 3;
+                    width: 260px;
+                    height: 440px;
+                    // border: 1px solid;
+                    margin: auto;
+                }
+            }
+        }
+        .section-name{
+            margin: 50px 0;
+            // 문서 윗 첨자
+            h3{
+                display: inline;
+                letter-spacing: 0.1em;
+                font-size: 2.3rem;
+                border-bottom: 1px solid;
+            }
+        }
+        .info-cover{
+            text-align: center;
+            color: #ffffff;
+            .icon{
+                margin-bottom: 50px;
+                &>span{
+                    font-size: 5rem;
+                }
+            }
+            .info{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+
+    .section_mobile{
+        .container{
+            .wrapper{
+                display: inline-block;
+                position: relative;
+                top: -450px;
+                margin-left: -280px;
+                width:0;
+                z-index: 2;
+                @include media-s(){
+                    img{
+                        display:none;
+                    }
+                }
+            }
+        }
+    }
+    .section_phone{
+        padding-top:0;
+    }
+    .section_email{
+        padding-top:0;
+    }
+    .section_git{
+        padding-top:0;
+        .icon{
+            img{
+                width: 78px;
+            }
+        }
+    }
+    .space-section{
+        width: 100%;
+        height: 300px;
+    }
+  
+}

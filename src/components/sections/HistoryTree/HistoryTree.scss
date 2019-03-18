@@ -1,0 +1,83 @@
+@import 'styles/utils.scss';
+
+.section_history-tree-root{
+    width: 100%;
+    color: #ffffff;
+    background: #111111;
+    .start-section{
+        @extend .section-l;
+    }
+    .article-section{
+        position: relative;
+        overflow: hidden;
+        @extend .section-l;
+        text-align: center;
+        line-height: 2rem;
+        // 문서 윗 첨자
+        .text-deco-line{
+            display: inline-block;
+            width: 4em;
+            height: 0.5rem;
+            background-color: $secondary-color;
+            content: '';
+            margin-bottom: 2rem;
+        }
+        .period{
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            line-height: 1.5em;
+        }
+        .description{
+            font-size: 1.2rem;
+            word-wrap: break-word;
+            word-break: keep-all;
+            margin-bottom: 2rem;
+            line-height: 2em;
+            font-weight: 200;
+            color: #ccc;
+            b{ 
+                font-size: 1.7rem; font-weight: bold;
+                color: #ffffff;
+            }
+        }
+        .link{
+            margin-bottom: 2rem;
+            a{color: skyblue; text-decoration: underline}
+        }
+        .participation-rate{
+            line-height: 2em;
+            margin-bottom: 2rem;
+            border: 1px solid #ffffff;
+            display: inline-block;
+            padding: 0 2em;
+        }
+        .stacks{
+            margin-bottom: 2rem;
+            .chip{
+                margin: 10px;
+            }
+        }
+        .filter{
+            position: absolute;
+            left:0;
+            top:0;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            background-size: cover;
+            opacity: 0.2
+        }
+        @include media-s(){
+            .period{
+                font-size: 2.5rem;
+            }
+            .description{
+                font-size: 1.1em;
+                b{font-size: 1.3em;}
+            }
+        }
+    }
+}
