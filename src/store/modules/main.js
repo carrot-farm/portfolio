@@ -11,6 +11,39 @@ import { Link } from '@material-ui/core';
 //initial state
 const initialState = Map({
    history: List([
+      // 포트폴리오
+      Map({
+         _id: 7,
+         bg: '/data/images/main/main_bg_7_20190318.jpg',
+         period: '2019.3',
+         description: Map({
+            title: '포트폴리오',
+            list: List([
+               Map({text: '리액를 사용한 포트폴리오 페이지'}),
+               Map({text: '동적움직임에 신경써서 디자인'}),
+               Map({text: 'SPA의 특징을 사용한 페이지 이동시 애니메이션'}),
+            ])
+         }),
+         links: List([
+            Map({
+               category: 'web',
+               link: 'http://portfolio.carrottodo.net',
+               text: 'portfolio.net'
+            }),
+            Map({
+               category: 'git',
+               link: 'https://github.com/carrot-farm/portfolio',
+               text: 'portfolio'
+            })
+         ]),
+         participationRate: 100,
+         stacks: List([
+            Map({label: 'nodejs'}),
+            Map({label: 'react'}),
+            Map({label: 'redux'}), 
+            Map({label: 'aws'}), 
+         ]),
+      }),
       // 할일 앱
       Map({
          _id: 0,
