@@ -9,8 +9,6 @@ import ColorTheme from 'components/common/ColorTheme'; //컬러 테마
 const store = configure();
 
 class Root extends Component {
-   componentDidMount(){
-   }
    render() {
       return (
          <Provider store={store}>

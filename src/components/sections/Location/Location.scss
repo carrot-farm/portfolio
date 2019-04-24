@@ -1,35 +1,35 @@
-@import 'styles/utils.scss';
+@import "styles/utils.scss";
 
-.section_locaion-root{
-    width: 100%;
-    color: #ffffff;
-    background: #111111;
-    .location-container{
-        height: 320px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        color: #aaaaaa;
-        h5{
-            color: #aaaaaa;
-            line-height: 2rem;
-            font-size: 0.9rem;
-        }
-        h3{
-            font-weight: bold;
-            font-size: 4rem;;
-            span{
-                font-size: inherit;
-            }
-            a{
-                color: #aaaaaa;
-                transition: all 0.2s linear;
-            }
-            a:hover{
-                color: #ffffff;
-                padding-left: 10px;
-            }
-        }
+.section_locaion-root {
+  width: 100%;
+  color: #ffffff;
+  background: #111111;
+  .location-container {
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #aaaaaa;
+    h5 {
+      color: #aaaaaa;
+      line-height: 2rem;
+      font-size: 0.9rem;
     }
+    h3 {
+      font-weight: bold;
+      font-size: 3.2rem;
+      span {
+        font-size: inherit;
+      }
+      a {
+        color: #aaaaaa;
+        transition: all 0.2s linear;
+      }
+      a:hover {
+        color: #ffffff;
+        padding-left: 10px;
+      }
+    }
+  }
 }

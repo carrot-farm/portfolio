@@ -1,173 +1,179 @@
-@import 'styles/utils.scss';
+@import "styles/utils.scss";
 
-.section_about-contents-root{
-    width: 100%;
-    color: #ffffff;
-    background: #111111;
-    .start-section{
-        @extend .section-l;
+.section_about-contents-root {
+  width: 100%;
+  color: #ffffff;
+  background: #111111;
+  .start-section {
+    @extend .section-l;
+  }
+  .article-section {
+    position: relative;
+    overflow: hidden;
+    @extend .section-l;
+    text-align: left;
+    line-height: 2rem;
+    .wrapper {
+      width: 50%;
+      word-break: keep-all;
+      overflow: hidden;
+      &.right-wrapper {
+        float: right;
+      }
     }
-    .article-section{
+    .section-name {
+      // 문서 윗 첨자
+      .h3-deco {
+        display: inline-block;
+        width: 0.2rem;
+        height: 2.3rem;
+        background-color: $page_about-color;
+        content: "";
+        margin-right: 1rem;
+      }
+      h3 {
+        display: inline;
+        letter-spacing: 0.1em;
+        font-size: 2.3rem;
+      }
+    }
+    .chip-container,
+    p,
+    ul {
+      margin-top: 1rem;
+      padding-left: 1rem;
+      font-size: 1rem;
+      word-wrap: break-word;
+      word-break: keep-all;
+      margin-bottom: 2rem;
+      line-height: 2em;
+      font-weight: 200;
+      color: #aaaaaa;
+    }
+    p,
+    .chip-container {
+      b {
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: #cccccc;
+      }
+    }
+    @include media-s() {
+      .wrapper {
+        width: inherit;
+        &.right-wrapper {
+          float: initial;
+        }
+      }
+      .section-name {
+        .h3-deco {
+          height: 1.7rem;
+        }
+        h3 {
+          font-size: 1.7rem;
+        }
+      }
+      p {
+        font-size: 0.9em;
+        b {
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
+  // 소개
+  .section_introduction {
+    text-align: left;
+    .section-name {
+      white-space: nowrap;
+    }
+  }
+  // stacks
+  .section_stacks {
+    .chip-container,
+    .section-name {
+      text-align: left;
+    }
+    .chip-container > div {
+      margin: 10px 5px;
+      background-color: #757373;
+    }
+  }
+  // qualification
+  .section_qualification {
+    .section-name {
+      white-space: nowrap;
+    }
+    ul {
+      font-size: 1.2rem;
+      color: #aaaaaa;
+      font-weight: 200;
+      line-height: 2.5em;
+      .name {
+        display: inline-block;
+        width: 11em;
+        padding-right: 1rem;
+        border-right: 1px solid;
+      }
+      .period {
+        padding-left: 1rem;
+      }
+    }
+    @include media-s {
+      ul {
+        font-size: 0.9rem;
+        .name {
+          width: 10rem;
+        }
+      }
+    }
+  }
+  // work-expreience
+  .section_work-expreience {
+    .container {
+      position: relative;
+      li {
         position: relative;
-        overflow: hidden;
-        @extend .section-l;
-        text-align: left;
-        line-height: 2rem;
-        .wrapper{
-            width: 50%;
-            word-break: keep-all;
-            overflow: hidden;
-            &.right-wrapper{
-                float:right;
-            }
+        padding-left: 1.5rem;
+        .line {
+          border-left: 1px solid #555555;
+          position: absolute;
+          left: -0.5rem;
+          top: 0.5rem;
+          // height: 46rem;
         }
-        .section-name{
-            // 문서 윗 첨자
-            .h3-deco{
-                display: inline-block;
-                width: 0.2rem;
-                height: 2.3rem;
-                background-color: $page_about-color;
-                content: '';
-                margin-right: 1rem;
-            }
-            h3{
-                display: inline;
-                letter-spacing: 0.1em;
-                font-size: 2.3rem;
-            }
+        .period:before {
+          width: 1rem;
+          height: 1rem;
+          background-color: $page_about-color;
+          border-radius: 50%;
+          position: absolute;
+          top: 0.5rem;
+          left: -1rem;
+          content: "";
         }
-        .chip-container,
-        p, ul{
-            margin-top: 1rem;
-            padding-left: 1rem;
-            font-size: 1rem;
-            word-wrap: break-word;
-            word-break: keep-all;
-            margin-bottom: 2rem;
-            line-height: 2em;
-            font-weight: 200;
-            color: #aaaaaa;
+        .period {
+          font-size: 2rem;
+          font-weight: bold;
+          margin-bottom: 1rem;
         }
-        p,
-        .chip-container
-        {
-            b{ 
-                font-size: 1.7rem; font-weight: bold;
-                color: #cccccc;
-            }
+        .company {
+          font-weight: bold;
+          font-size: 1.2em;
         }
-        @include media-s(){
-            .wrapper{
-                width: inherit;
-                &.right-wrapper{
-                    float:initial;
-                }
-            }
-            .section-name{
-                .h3-deco{height: 1.7rem;}
-                h3{
-                    font-size: 1.7rem;
-                }
-            }
-            p{
-                font-size: 0.9em;
-                b{font-size: 1.3em;}
-            }
+        p {
+          padding-left: 0;
         }
+      }
+      &.first-li,
+      .second-li {
+        min-height: 22rem;
+      }
     }
-    // 소개
-    .section_introduction{
-        text-align: left;
-        .section-name{
-            white-space: nowrap;
-        }
+    @include media-s() {
+      .period {
+        font-size: 1.5rem !important;
+      }
     }
-    // stacks
-    .section_stacks{
-        .chip-container , .section-name{
-            text-align: left;
-        }
-        .chip-container> div{
-            margin: 10px 5px;
-            background-color: #757373;
-        }
-    }
-    // qualification
-    .section_qualification{
-        .section-name{
-            white-space: nowrap;
-        }
-        ul{
-            
-            font-size: 1.2rem;
-            color: #aaaaaa;
-            font-weight: 200;
-            line-height: 2.5em;
-            .name{
-                display: inline-block;
-                width: 11em;
-                padding-right: 1rem;
-                border-right: 1px solid;
-            }
-            .period{
-                padding-left:  1rem;
-            }
-        }
-        @include media-s{
-            ul{
-                font-size: 0.9rem;
-                .name{
-                    width: 10em;
-                }
-            }
-        }
-    }
-    // work-expreience
-    .section_work-expreience{
-        .container{
-            position: relative;
-            li{
-                position: relative;
-                padding-left: 1.5rem;
-                .line{
-                    border-left: 1px solid #555555;
-                    position: absolute;
-                    left: -0.5rem;
-                    top: 0.5rem;
-                    // height: 46rem;
-                }
-                .period:before{
-                    width: 1rem;
-                    height: 1rem;
-                    background-color: $page_about-color;
-                    border-radius: 50%;
-                    position: absolute;
-                    top: 0.5rem;
-                    left: -1rem;
-                    content: '';
-                }
-                .period{
-                    font-size: 2rem;
-                    font-weight: bold;
-                    margin-bottom: 1rem;
-                }
-                .company{
-                    font-weight: bold;
-                    font-size: 1.2em;
-                }
-                p{
-                    padding-left:0;
-                }
-            }
-            &.first-li, .second-li{
-                min-height: 22rem;
-            }
-        }
-        @include media-s(){
-            .period{
-                font-size: 1.5rem !important;
-            }
-        }
-    }
+  }
 }
