@@ -19,7 +19,7 @@ const initialState = Map({
       description: Map({
         title: "포트폴리오",
         list: List([
-          Map({ text: "리액를 사용한 포트폴리오 페이지" }),
+          Map({ text: "리액트를 사용한 포트폴리오 페이지" }),
           Map({ text: "동적움직임에 신경써서 디자인" }),
           Map({ text: "SPA의 특징을 사용한 페이지 이동시 애니메이션" })
         ])

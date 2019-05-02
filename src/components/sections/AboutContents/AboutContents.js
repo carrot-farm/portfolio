@@ -38,10 +38,10 @@ class AboutContents extends Component {
 
       this.scenes[i] = new ScrollMagic.Scene({
         triggerElement: ".article-section-" + i,
-        triggerHook: 0.4
+        triggerHook: 0.7
       })
         .setTween(this.tls[i])
-        //   .addIndicators({ name: i })
+        // .addIndicators({ name: i })
         .addTo(this.controller);
     }
   };

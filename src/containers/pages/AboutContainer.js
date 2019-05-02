@@ -23,6 +23,7 @@ class MainContainer extends Component {
           description={"언제나 연락주십시요."}
           location={"Contact"}
           link={"/contact"}
+          bg={"#24c7b1"}
         />
       </div>
     );
