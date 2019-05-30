@@ -170,7 +170,7 @@ class AboutContents extends Component {
           </div>
         </div>
         {/* work expreience */}
-        <div
+        {/* <div
           className={cx(
             "section_work-expreience article-section clearfix  article-section-3"
           )}
@@ -224,21 +224,12 @@ class AboutContents extends Component {
                     <br />
                     웹 에이전시.
                     <br />
-                    {/* 4대 보험을 나중에 들어줌. */}
-                    {/* 4대보험도 나중에 들어주고<br />
-                              급여도 처음 얘기했던 것과 완전딴판이고<br />
-                              (첫 3달은 50만원만 받고 다님.)<br />
-                              매일 밤늦게까지 일했으며<br />
-                              밥도 제대로 안주고<br />
-                              제대로된 사수도 없었으며<br />
-                              불법적인 일을 시키려 했습니다.<br />
-                              (도박 사이트 관리등.) */}
                   </p>
                 </li>
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }
