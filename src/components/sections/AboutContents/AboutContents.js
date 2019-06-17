@@ -170,7 +170,7 @@ class AboutContents extends Component {
           </div>
         </div>
         {/* work expreience */}
-        {/* <div
+        <div
           className={cx(
             "section_work-expreience article-section clearfix  article-section-3"
           )}
@@ -195,9 +195,6 @@ class AboutContents extends Component {
                   <p>
                     만들고 싶었던 앱을 만들기 위해 <br />
                     스타트업 시작.
-                    <br />
-                    비록 실패하였지만 <br />
-                    많은 경험을 할 수 있었습니다.
                   </p>
                 </li>
                 <li className={cx("second-li ani")}>
@@ -229,7 +226,7 @@ class AboutContents extends Component {
               </ul>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     );
   }
