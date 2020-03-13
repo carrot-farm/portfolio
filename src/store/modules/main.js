@@ -11,39 +11,160 @@ import { Link } from "@material-ui/core";
 //initial state
 const initialState = Map({
   history: List([
-    // 코인 시스템
+    // ===== GSAP3용 스크롤 플러그인
     Map({
-      _id: 8,
-      bg: "/data/images/main/main_bg_8_201905.jpg",
-      period: "2019.5",
+      _id: 12,
+      bg: "/data/images/main/gsap_scroll_2.png",
+      period: "2020.02",
       description: Map({
-        title: "코인 차트",
+        title: "GSAP-SCROLL 예제 페이지",
         list: List([
-          Map({ text: "리액트의 state 관리를 잘 나타내는 형태의 사이트" }),
-          Map({ text: "차트 부분만 프론트엔드에서 구현" }),
+          Map({ text: "NPM에 예제로 사용한 페이지" }),
+        ])
+      }),
+      links: List([
+        Map({
+          category: "WEB",
+          link: "http://gsap_scroll.carrottodo.net/",
+          text: "gsap_scroll.carrottodo.net"
+        }),
+        Map({
+          category: "GIT",
+          link: "https://github.com/carrot-farm/edu-react-gsap3",
+          text: "GIT"
+        }),
+      ]),
+      participationRate: 100,
+      stacks: List([
+        Map({ label: "react" }),
+        Map({ label: "Node.js" }),
+        Map({ label: "gsap" }),
+        Map({ label: "gsap-scroll" }),
+      ])
+    }),
+
+    // ===== GSAP3용 스크롤 플러그인
+    Map({
+      _id: 11,
+      bg: "/data/images/main/gsap-scroll.png",
+      period: "2020.02",
+      description: Map({
+        title: "GSAP3용 스크롤 플러그인",
+        list: List([
+          Map({ text: "NPM에 공유." }),
+          Map({ text: "아직 초기 단계." }),
+        ])
+      }),
+      links: List([
+        Map({
+          category: "NPM",
+          link: "https://www.npmjs.com/package/gsap-scroll",
+          text: "NPM"
+        }),
+        Map({
+          category: "Git",
+          link: "https://github.com/carrot-farm/gsap-scroll",
+          text: "Git"
+        }),
+      ]),
+      participationRate: 100,
+      stacks: List([
+        Map({ label: "react" }),
+        Map({ label: "Node.js" }),
+        Map({ label: "gsap" }),
+        Map({ label: "gsap-scroll" }),
+      ])
+    }),
+
+    // ===== ap mall 주문 페이지
+    Map({
+      _id: 10,
+      bg: "/data/images/main/dashboard-example.png",
+      period: "2020.01 ~ 02",
+      description: Map({
+        title: "아모레 퍼시픽 대시보드",
+        list: List([
+          Map({ text: "GA와 내부 api의 데이터를 통합해서 보여줌" }),
+          Map({ text: "사내 확인용" }),
         ])
       }),
       links: List([
         Map({
           category: "web",
-          link: "http://tradecoin.carrottodo.net",
-          text: "coin"
-        }),
-        Map({
-          category: "git",
-          link: "https://github.com/carrot-farm/carrot-coin-web-client-example",
-          text: "coin"
+          // link: "https://www.amorepacificmall.com",
+          // text: "amorepacificmall.com"
         })
       ]),
       participationRate: 100,
       stacks: List([
-        Map({ label: "nodejs" }),
+        Map({ label: "Next.js" }),
         Map({ label: "react" }),
+        Map({ label: "Node.js" }),
         Map({ label: "redux" }),
-        Map({ label: "chart" }),
-        Map({ label: "aws" })
+        Map({ label: "redux-saga" }),
+        Map({ label: "sass" }),
       ])
     }),
+
+    // ===== ap mall 주문 페이지
+    Map({
+      _id: 9,
+      bg: "/data/images/main/ap-mall.png",
+      period: "2019.9 ~ 12",
+      description: Map({
+        title: "AP MAll 장바구니/주문페이지",
+        list: List([
+          Map({ text: "기존 스프링으로 되어 있는 was Node.js와 Next로 전환 작업." }),
+          Map({ text: "처음 계획은 점진적으로 전체 페이지 교체예정 이었음." }),
+          Map({ text: "만드는 중 임원진이 프로젝트 드랍." }),
+        ])
+      }),
+      links: List([
+        Map({
+          category: "web",
+          link: "https://www.amorepacificmall.com",
+          text: "amorepacificmall.com"
+        })
+      ]),
+      participationRate: 100,
+      stacks: List([
+        Map({ label: "Next.js" }),
+        Map({ label: "react" }),
+        Map({ label: "Node.js" }),
+        Map({ label: "redux" }),
+        Map({ label: "redux-saga" }),
+        Map({ label: "sass" }),
+      ])
+    }),
+
+    // ===== 아모레 퍼시픽 캐나다 설화수
+    Map({
+      _id: 8,
+      bg: "/data/images/main/sulwhasu-canada.png",
+      period: "2019.7 ~ 8",
+      description: Map({
+        title: "아모레 퍼시픽 캐나다 설화수 보일러플레이트",
+        list: List([
+          Map({ text: "Next.js 보일러 플레이트 제작" }),
+        ])
+      }),
+      links: List([
+        Map({
+          category: "web",
+          link: "https://ca.sulwhasoo.com/en/",
+          text: "ca.sulwhasoo.com"
+        })
+      ]),
+      participationRate: 100,
+      stacks: List([
+        Map({ label: "Next.js" }),
+        Map({ label: "react" }),
+        Map({ label: "Node.js" }),
+        Map({ label: "redux" }),
+        Map({ label: "redux-saga" }),
+      ])
+    }),
+
     // 포트폴리오
     Map({
       _id: 7,
@@ -112,6 +233,7 @@ const initialState = Map({
         Map({ label: "RESTful" })
       ])
     }),
+    // 동네엔
     Map({
       _id: 1,
       bg: "/data/images/main/main_bg_5_20190312.jpg",
