@@ -25,8 +25,8 @@ const initialState = Map({
       links: List([
         Map({
           category: "WEB",
-          link: "http://gsap_scroll.carrottodo.net/",
-          text: "gsap_scroll.carrottodo.net"
+          link: "http://gsapscroll.carrotlabel.com/",
+          text: "gsapscroll.carrotlabel.com"
         }),
         Map({
           category: "GIT",
@@ -181,8 +181,8 @@ const initialState = Map({
       links: List([
         Map({
           category: "web",
-          link: "http://portfolio.carrottodo.net",
-          text: "portfolio.net"
+          link: "http://portfolio.carrotlabel.com",
+          text: "portfolio"
         }),
         Map({
           category: "git",
@@ -213,8 +213,8 @@ const initialState = Map({
       links: List([
         Map({
           category: "web",
-          link: "http://carrottodo.net",
-          text: "carrottodo.net"
+          link: "http://todo.carrotlabel.com",
+          text: "todo.carrotlabel.com"
         }),
         Map({
           category: "git",
