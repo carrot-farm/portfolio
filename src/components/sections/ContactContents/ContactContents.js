@@ -4,8 +4,8 @@ import classNames from 'classnames/bind';
 import ScrollMagic from 'scrollmagic';
 import 'scrollmagic/scrollmagic/minified/plugins/animation.gsap.min';
 import 'scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min';
-import { TimelineMax, Power2 } from 'gsap/all';
-import { Chip } from '@material-ui/core';
+import { TimelineMax } from 'gsap/all';
+// import { Chip } from '@material-ui/core';
 import Icon from '@material-ui/core/Icon';
 
 const cx = classNames.bind(styles);
@@ -62,7 +62,7 @@ class ContactContents extends Component {
    }
 
    componentWillUnmount() {
-      this.scenes.map((item) => {
+      this.scenes.forEach((item) => {
          item.destroy();
       });
    }

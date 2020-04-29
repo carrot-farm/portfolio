@@ -56,7 +56,7 @@ class HistoryTree extends Component {
    }
 
    componentWillUnmount() {
-      this.scenes.map(
+      this.scenes.forEach(
          (item)=>{
             item.destroy();
          }
@@ -101,7 +101,7 @@ class HistoryTree extends Component {
                                     item.get('links').map(
                                        (_item, _index) => (
                                           <li key={_index}>
-                                             {_item.get('category')} : <a href={_item.get('link')} target="_blank">{_item.get('text')}</a>
+                                             {_item.get('category')} : <a href={_item.get('link')} target="_blank" rel="noopener noreferrer">{_item.get('text')}</a>
                                           </li>
                                        )
                                     )

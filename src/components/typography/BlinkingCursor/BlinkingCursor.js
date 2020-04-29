@@ -39,12 +39,12 @@ class BlinkingCursor extends Component{
                curIndex: this.state.curIndex+1,
                text: beforeText+this.state.ogText[this.state.curIndex]
             })
-            this.state.text.split('\n').map((line, index)=>{
+            this.state.text.split('\n').forEach((line, index) => {
                if(index > 0 && index > this.state.brIndex ){
                   textEl.innerHTML = this.state.text+'<br/>';
                   this.setState({
                      brIndex: this.state.brIndex+1
-                  })
+                  });
                }else{
                   textEl.innerHTML = this.state.text;
                }

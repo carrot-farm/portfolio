@@ -7,7 +7,7 @@ import classNames from 'classnames/bind';
 import {withRouter } from 'react-router-dom';
 import AnimatedLink from 'components/common/AnimatedLink';
 import {IconButton, Icon} from '@material-ui/core';
-import { TimelineMax, TweenMax } from 'gsap/all';
+import { TimelineMax } from 'gsap/all';
 
 const cx = classNames.bind(styles);
 

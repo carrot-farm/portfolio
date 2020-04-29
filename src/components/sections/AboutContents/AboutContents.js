@@ -57,7 +57,7 @@ class AboutContents extends Component {
   }
 
   componentWillUnmount() {
-    this.scenes.map(item => {
+    this.scenes.forEach(item => {
       item.destroy();
     });
   }

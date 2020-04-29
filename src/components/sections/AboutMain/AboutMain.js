@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import styles from './AboutMain.scss';
 import classNames from 'classnames/bind';
-import {TimelineMax, Elastic} from 'gsap/all';
-import {convertBr} from 'lib/tools';
-import BlinkingCursor from 'components/typography/BlinkingCursor';
+import {TimelineMax} from 'gsap/all';
+// import {convertBr} from 'lib/tools';
+// import BlinkingCursor from 'components/typography/BlinkingCursor';
 import Icon from '@material-ui/core/Icon';
 
 const cx = classNames.bind(styles);
@@ -48,7 +48,7 @@ class PopIcons extends Component{
       return(
          <div className={cx('about-main-root')} style={{backgroundImage:`url(${background})`}}>
             <div className={cx('title-container container')}>
-               <h2 className={cx('title')} ref={el=>this.titleEl=el}></h2>
+               <div className={cx('title')} ref={ el =>this.titleEl=el}></div>
             </div>
             <div className={cx('filter')}></div>
             <div className={cx('bottom-arrow-container')}>

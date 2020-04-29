@@ -1,19 +1,13 @@
-import { createAction, handleActions } from "redux-actions";
-import { pender } from "redux-pender";
+import { handleActions } from "redux-actions";
 import { Map, List } from "immutable";
-import * as api from "lib/api";
-import { Link } from "@material-ui/core";
 
-//action types
-
-//action creators
 
 //initial state
 const initialState = Map({
   history: List([
     // ===== Kooky 어드민 페이지
     Map({
-      _id: 12,
+      _id: 13,
       bg: "/data/images/main/KooKy-admin.png",
       period: "2020.04",
       description: Map({

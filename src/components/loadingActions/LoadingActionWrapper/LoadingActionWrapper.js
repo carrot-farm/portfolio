@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import styles from './LoadingActionWrapper.scss';
-import classNames from 'classnames/bind';
+import React, { Component } from "react";
+import styles from "./LoadingActionWrapper.scss";
+import classNames from "classnames/bind";
 
 const cx = classNames.bind(styles);
 
@@ -27,7 +27,7 @@ class LoadingActionWrapper extends Component{
    }
    render(){
       const {children, visible} = this.props;
-      const {animate} = this.state;
+      // const {animate} = this.state;
       // //visible 과 animation 둘다 활성화 되야 랜더링
       // if(!visible &&!animate){return null;}
       //enter, leave 중 어느 애니메이션인지 상태 설정.
