@@ -11,6 +11,26 @@ import { Link } from "@material-ui/core";
 //initial state
 const initialState = Map({
   history: List([
+    // ===== Kooky 어드민 페이지
+    Map({
+      _id: 12,
+      bg: "/data/images/main/KooKy-admin.png",
+      period: "2020.04",
+      description: Map({
+        title: "Kooky 스타트업 어드민 페이지",
+        list: List([
+          Map({ text: "토큰인증" }),
+          Map({ text: "게시판 기능" }),
+          Map({ text: "차트 출력" }),
+        ])
+      }),
+      links: List([]),
+      participationRate: 100,
+      stacks: List([
+        Map({ label: "react" }),
+        Map({ label: "sass" }),
+      ])
+    }),
     // ===== GSAP3용 스크롤 플러그인
     Map({
       _id: 12,
