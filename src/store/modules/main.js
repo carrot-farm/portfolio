@@ -5,6 +5,44 @@ import { Map, List } from "immutable";
 //initial state
 const initialState = Map({
   history: List([
+    // ===== ui library
+    Map({
+      _id: 14,
+      bg: "/data/images/main/react-carrot-ui.png",
+      period: "2020.05",
+      description: Map({
+        title: "react용 ui 오픈소스 라이브러리",
+        list: List([
+          Map({ text: "materiali ui 베이스" }),
+          Map({ text: "지속적으로 추가해갈 예정" }),
+        ])
+      }),
+      links: List([
+        Map({
+          category: "NPM",
+          link: "https://https://www.npmjs.com/package/react-carrot-ui",
+          text: "NPM"
+        }),
+        Map({
+          category: "Git",
+          link: "https://github.com/carrot-farm/react-carrot-ui",
+          text: "Git"
+        }),
+        Map({
+          category: "WEB",
+          link: "http://carrot-ui.carrotlabel.com/",
+          text: "Example Web Page"
+        }),
+      ]),
+      participationRate: 100,
+      stacks: List([
+        Map({ label: "react" }),
+        Map({ label: "Node.js" }),
+        Map({ label: "gsap" }),
+        Map({ label: "gsap-scroll" }),
+      ])
+    }),
+
     // ===== Kooky 어드민 페이지
     Map({
       _id: 13,
@@ -179,6 +217,34 @@ const initialState = Map({
       ])
     }),
 
+    // # 코인 트레이드
+    Map({
+      _id: `7_2`,
+      bg: "/data/images/main/main_bg_8_201905.jpg",
+      period: "2019.4",
+      description: Map({
+        title: "코인 페이지",
+        list: List([
+          Map({ text: "가상화페 페이지" }),
+          Map({ text: "데이터 처리에 신경씀" }),
+          Map({ text: "매수/매도/검색/즐겨찾기등 모든기능 작동" }),
+        ])
+      }),
+      links: List([
+        Map({
+          category: "web",
+          link: "https://trade.carrotlabel.com/",
+          text: "portfolio"
+        }),
+      ]),
+      participationRate: 100,
+      stacks: List([
+        Map({ label: "react" }),
+        Map({ label: "redux-saga" }),
+        Map({ label: "chart" }),
+      ])
+    }),
+
     // 포트폴리오
     Map({
       _id: 7,
@@ -212,6 +278,7 @@ const initialState = Map({
         Map({ label: "aws" })
       ])
     }),
+
     // 할일 앱
     Map({
       _id: 0,
